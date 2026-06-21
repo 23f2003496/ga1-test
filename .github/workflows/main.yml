@@ -5,5 +5,5 @@ jobs:
   test:
   runs-on: "Ubuntu 24.04.3 LTS"
     steps: 
-      name: 23f2003496@ds.study.iitm.ac.in
+      - name: 23f2003496@ds.study.iitm.ac.in
       run: echo "Hello, world!"
