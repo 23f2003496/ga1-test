@@ -1,9 +1,13 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
-on: [commit]
+name: My Action with Email
+
+on: 
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
 jobs:
   test:
-  runs-on: "Ubuntu 24.04.3 LTS"
-    steps: 
+    runs-on: ubuntu-latest
+    steps:
       - name: 23f2003496@ds.study.iitm.ac.in
-      run: echo "Hello, world!"
+        run: echo "Hello, world!"
